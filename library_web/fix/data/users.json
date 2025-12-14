@@ -76,5 +76,17 @@
         "name": "123",
         "email": "weqe@aa.cm",
         "password": "$2y$10$jAlpmmFgMBKggWodHIUyY.XZPNorHrYg9weYnZuxyMDrND8iXtbIq"
+    },
+    {
+        "id": 14,
+        "name": "isusx",
+        "email": "juliana@gmail.ocm",
+        "password": "$2y$10$CjfKhvmKthZtBXaqRW9KzupD5S2581pezRbQjS0AOAN1an4oXNN4m"
+    },
+    {
+        "id": 15,
+        "name": "julian",
+        "email": "julian12@gmail.com",
+        "password": "$2y$10$F\/7ueEOlyoQgrnehm63ke.eIovkhLj.gTIPgzfdEtxne3T8Mv7ug6"
     }
 ]

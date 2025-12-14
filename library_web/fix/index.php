@@ -3,7 +3,7 @@ session_start();
 
 // If the user is logged in, redirect them to the dashboard.
 if (isset($_SESSION['user_id'])) {
-    header('Location: dashboard1.php');
+    header('Location: dashboard.php');
     exit;
 }
 
