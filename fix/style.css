@@ -1,0 +1,131 @@
+/* reset & base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+/* background image layer (covers viewport) */
+.bg-image {
+  position: fixed;
+  inset: 0;
+  background-image: url('book.jpg'); /* put your image file named bg.jpg here */
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  z-index: 0;
+}
+
+/* center container (above background) */
+.container {
+  position: relative;
+  z-index: 5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* login box (glass effect) */
+.login-box {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 36px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.06);
+  margin-left: 50px;
+}
+
+/* title */
+.login-title {
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+/* input group */
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+
+.input-group input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.input-group input:focus {
+  border-color: rgba(255,255,255,0.28);
+  box-shadow: 0 4px 5px rgba(0,0,0,0.35) inset;
+}
+
+/* button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(255,126,95,0.95), rgba(254,180,123,0.95));
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 15px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 5px rgba(255,126,95,0.18);
+}
+
+/* bottom link */
+.links {
+  margin-top: 14px;
+  text-align: center;
+}
+
+.links a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.95;
+  margin-left: 120px;
+}
+
+.links span {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.95;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* responsive */
+@media (max-width: 480px) {
+  .login-box { padding: 24px; border-radius: 12px; }
+  .login-title { font-size: 20px; }
+}
